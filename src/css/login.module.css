@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  background: #4d4fc9;
+  background: linear-gradient(
+    16deg,
+    rgba(77, 79, 201, 1) 7%,
+    rgba(148, 187, 233, 1) 83%
+  );
+
+  min-height: 100vh;
+  width: 100%;
+
+  /* background-image: url("../assets/Login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.inputBox {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #c4c4c4;
+}
+
+.button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  background: #2325a6;
+  border: 1px solid #2325a6;
+  color: #ffffff;
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: #c4c4c4;
+  width: 100%;
+  margin: 25px 5px;
+}
+
+.underlineText {
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
