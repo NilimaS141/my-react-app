@@ -1,7 +1,10 @@
 import { useState } from "react";
 import style from "../css/login.module.css";
+import { useNavigate } from "react-router";
+import Dashboard from "./DashboardPage";
 
 function Login() {
+  const navigate = useNavigate();
   const [inputval, setinputval] = useState("");
   const [passval, setpassval] = useState("");
   const [error, setError] = useState("");
@@ -10,8 +13,18 @@ function Login() {
     if (!inputval || !passval) {
       setError("Username and Password is required");
     } else {
+      handleSubmit();
       setError("");
     }
+  };
+
+  const handleSubmit = () => {
+    navigate("/dashboard", {
+      state: {
+        username: inputval,
+        password: passval,
+      },
+    });
   };
 
   console.log(inputval, passval);
@@ -55,6 +68,7 @@ function Login() {
             ErrorHandle();
             setinputval("");
             setpassval("");
+            // handleSubmit();
           }}
         >
           Submit
