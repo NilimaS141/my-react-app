@@ -1,7 +1,6 @@
 import { useState } from "react";
 import style from "../css/login.module.css";
 import { useNavigate } from "react-router";
-import Dashboard from "./DashboardPage";
 
 function Login() {
   const navigate = useNavigate();
