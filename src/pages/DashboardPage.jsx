@@ -1,7 +1,7 @@
 import { useLocation } from "react-router";
-import StatWidget from "./StatWidget";
-import ActivityWidget from "./ActivityWidget";
-import ChartWidget from "./ChartWidget";
+import StatWidget from "../Widgets/StatWidget";
+import ActivityWidget from "../Widgets/ActivityWidget";
+import ChartWidget from "../Widgets/ChartWidget";
 import "../css/Dashboard.css";
 
 function Dashboard() {
